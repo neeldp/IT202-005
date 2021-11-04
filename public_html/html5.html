@@ -9,6 +9,7 @@ var context = canvas.getContext('2d');
 
 // Your score
 var score = 0;
+var multiplier = 1;
 
 // Properties for your square
 var x = 50; // X position
@@ -117,7 +118,7 @@ function endGame() {
 // Move the target square to a random position
 function moveTarget() {
   targetX = Math.round(Math.random() * canvas.width - targetLength);
-  targetY = Math.round(Math.random() * canvas.height - targetLength)
+  targetY = Math.round(Math.random() * canvas.height - targetLength);
 }
 
 // Clear the canvas
@@ -160,9 +161,15 @@ function draw() {
     if (isWithin(targetY, y, y + sideLength) || isWithin(targetY + targetLength, y, y + sideLength)) { // Y
       // Respawn the target
       moveTarget();
-      moveTarget();
+      sideLength += 2.5;
       // Increase the score
       score++;
+
+      if (score == 25 * multiplier)
+      {
+        countdown += 10;
+        multiplier += 1;
+      }
     }
   }
   // Draw the square
