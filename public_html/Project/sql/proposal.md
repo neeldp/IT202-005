@@ -26,7 +26,7 @@
     - [ ] User will be able to register a new account
         - 11/10/2021 https://github.com/neeldp/IT202-005/pull/30        
         - - Form Fields
-            - [ x ] Username, email, password, confirm password(other fields optional)
+            - [x] Username, email, password, confirm password(other fields optional)
             - [ x ] Email is required and must be validated
             - [ x ] Username is required
             - [ x ] Confirm password’s match
