@@ -60,18 +60,20 @@
         - [x] Session should be destroyed (so the back button doesn’t allow them access back in)
     
 
-    - [ ] Basic security rules implemented
-        - Authentication:
-            - [ ] Function to check if user is logged in
-            - [ ] Function should be called on appropriate pages that only allow logged in users
+    - [x] Basic security rules implemented
+        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/36        
+        - - Authentication:
+            - [x] Function to check if user is logged in
+            - [x] Function should be called on appropriate pages that only allow logged in users
         - Roles/Authorization:
-            - [ ] Have a roles table (see below)
+            - [x] Have a roles table (see below)
 
     
-    - [ ] Basic Roles implemented
-        - [ ] Have a Roles table	(id, name, description, is_active, modified, created)
-        - [ ] Have a User Roles table (id, user_id, role_id, is_active, created, modified)
-        - [ ] Include a function to check if a user has a specific role (we won’t use it for this milestone but it should be usable in the future)
+    - [x] Basic Roles implemented
+        - 11/10/21 https://github.com/neeldp/IT202-005/pull/37        
+        - [x] Have a Roles table	(id, name, description, is_active, modified, created)
+        - [x] Have a User Roles table (id, user_id, role_id, is_active, created, modified)
+        - [x] Include a function to check if a user has a specific role (we won’t use it for this milestone but it should be usable in the future)
 
     
     - [ ] Site should have basic styles/theme applied; everything should be styled
