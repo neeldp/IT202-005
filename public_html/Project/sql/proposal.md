@@ -24,18 +24,19 @@
 
 - Milestone 1
     - [ ] User will be able to register a new account
-        - Form Fields
-            - [ ] Username, email, password, confirm password(other fields optional)
-            - [ ] Email is required and must be validated
-            - [ ] Username is required
-            - [ ] Confirm password’s match
+        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/30        
+        - - Form Fields
+            - [ x ] Username, email, password, confirm password(other fields optional)
+            - [ x ] Email is required and must be validated
+            - [ x ] Username is required
+            - [ x ] Confirm password’s match
         - Users Table
-            - [ ] Id, username, email, password (60 characters), created, modified
-        - [ ] Password must be hashed (plain text passwords will lose points)
-        - [ ] Email should be unique
-        - [ ] Username should be unique
-        - [ ] System should let user know if username or email is taken and allow the user to correct the error without wiping/   clearing the form
-        - [ ] The only fields that may be cleared are the password fields
+            - [ x ] Id, username, email, password (60 characters), created, modified
+        - [ x ] Password must be hashed (plain text passwords will lose points)
+        - [ x ] Email should be unique
+        - [ x ] Username should be unique
+        - [ x ] System should let user know if username or email is taken and allow the user to correct the error without wiping/   clearing the form
+        - [ x ] The only fields that may be cleared are the password fields
 
 
 
