@@ -40,16 +40,17 @@
 
 
 
-    - [ ] User will be able to login to their account (given they enter the correct credentials)
+    - [x] User will be able to login to their account (given they enter the correct credentials)
+        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/32        
         - Form
-            - [ ] User can login with email or username
+            - [x] User can login with email or username
                 - This can be done as a single field or as two separate fields
-            - [ ] Password is required
-        - [ ] User should see friendly error messages when an account either doesn’t exist or if passwords don’t match
-        - [ ] Logging in should fetch the user’s details (and roles) and save them into the session.
-        - [ ] User will be directed to a landing page upon login
-            - [ ]  This is a protected page (non-logged in users shouldn’t have access)
-            - [ ] This can be home, profile, a dashboard, etc
+            - [x] Password is required
+        - [x] User should see friendly error messages when an account either doesn’t exist or if passwords don’t match
+        - [x] Logging in should fetch the user’s details (and roles) and save them into the session.
+        - [x] User will be directed to a landing page upon login
+            - [x]  This is a protected page (non-logged in users shouldn’t have access)
+            - [x] This can be home, profile, a dashboard, etc
 
     
     - [ ] User will be able to logout
