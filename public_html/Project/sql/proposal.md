@@ -53,10 +53,11 @@
             - [x] This can be home, profile, a dashboard, etc
 
     
-    - [ ] User will be able to logout
-        - [ ] Logging out will redirect to login page
-        - [ ] User should see a message that they’ve successfully logged out
-        - [ ] Session should be destroyed (so the back button doesn’t allow them access back in)
+    - [x] User will be able to logout
+        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/34        
+        - [x] Logging out will redirect to login page
+        - [x] User should see a message that they’ve successfully logged out
+        - [x] Session should be destroyed (so the back button doesn’t allow them access back in)
     
 
     - [ ] Basic security rules implemented
