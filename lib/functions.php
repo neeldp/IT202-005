@@ -35,6 +35,7 @@ function is_valid_email($email = "")
 {
     return filter_var(trim($email), FILTER_VALIDATE_EMAIL);
 }
+
 //TODO 3: User Helpers
 function is_logged_in($redirect = false, $destination = "login.php")
 {
