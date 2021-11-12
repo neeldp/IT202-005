@@ -23,7 +23,7 @@
 ### Proposal Checklist and Evidence
 
 - Milestone 1
-    - [x] 11/10/2021 User will be able to register a new account
+    - [x] \(11/10/2021) User will be able to register a new account
         - Status: Completed
         - Direct Link: https://ndp69-prod.herokuapp.com/Project/register.php        
         - Pull Request: https://github.com/neeldp/IT202-005/pull/30
