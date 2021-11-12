@@ -28,15 +28,15 @@
         - Direct Link: https://ndp69-prod.herokuapp.com/Project/register.php        
         - Pull Request: https://github.com/neeldp/IT202-005/pull/30
         - Screenshots
-        - Screenshot #1 ![image](<u>https://user-images.githubusercontent.com/90344327/141401292-a0c996bf-b580-4c29-82e0-a00e81cd2a79.png<u>)
+        - Screenshot #1 ![image](https://user-images.githubusercontent.com/90344327/141401292-a0c996bf-b580-4c29-82e0-a00e81cd2a79.png)
           - Screenshot #1 Email validation
-        - Screenshot #2 ![image](<u>https://user-images.githubusercontent.com/90344327/141341071-ee53a70e-df3c-46d1-b420-47999a0d94ad.png<u>)
+        - Screenshot #2 ![image](https://user-images.githubusercontent.com/90344327/141341071-ee53a70e-df3c-46d1-b420-47999a0d94ad.png)
           - Screenshot #2 Password must be hashed (plain text passwords will lose points)
-        - Screenshot #3 ![image](<u>https://user-images.githubusercontent.com/90344327/141341071-ee53a70e-df3c-46d1-b420-47999a0d94ad.png<u>)
+        - Screenshot #3 ![image](https://user-images.githubusercontent.com/90344327/141341071-ee53a70e-df3c-46d1-b420-47999a0d94ad.png)
           - Screenshot #3 Users Table
-        - Screenshot #4 ![image](<u>https://user-images.githubusercontent.com/90344327/141340216-b060a2bb-8e83-413d-8f22-1dc04fd9376a.png<u>)
+        - Screenshot #4 ![image](https://user-images.githubusercontent.com/90344327/141340216-b060a2bb-8e83-413d-8f22-1dc04fd9376a.png)
           - Screenshot #4 Email is required
-        - Screenshot #5 ![image](<u>https://user-images.githubusercontent.com/90344327/141340288-6bb72182-9258-4e6e-bcb9-e717671c2d6a.png<u>)
+        - Screenshot #5 ![image](https://user-images.githubusercontent.com/90344327/141340288-6bb72182-9258-4e6e-bcb9-e717671c2d6a.png)
           - Screenshot #5 Username is required
 
     - [x] User will be able to login to their account (given they enter the correct credentials)
