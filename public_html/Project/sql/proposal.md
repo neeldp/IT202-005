@@ -2,7 +2,7 @@
 ## Project Summary: This project will create a simple Arcade with scoreboards and competitions based on the implemented game.
 ## Github Link: (Prod Branch of Project Folder)
 ## Project Board Link: https://github.com/neeldp/IT202-005/projects/1
-## Website Link: (Heroku Prod of Project folder)
+## Website Link: https://ndp69-prod.herokuapp.com/Project/login.php
 ## Your Name: Neel Patel
 
 <!--
@@ -23,70 +23,79 @@
 ### Proposal Checklist and Evidence
 
 - Milestone 1
-    - [ ] User will be able to register a new account
+    - [x] User will be able to register a new account
+        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/30        
         - Form Fields
-            - [ ] Username, email, password, confirm password(other fields optional)
-            - [ ] Email is required and must be validated
-            - [ ] Username is required
-            - [ ] Confirm password’s match
+            - [x] Username, email, password, confirm password(other fields optional)
+            - [x] Email is required and must be validated
+            - [x] Username is required
+            - [x] Confirm password’s match
         - Users Table
-            - [ ] Id, username, email, password (60 characters), created, modified
-        - [ ] Password must be hashed (plain text passwords will lose points)
-        - [ ] Email should be unique
-        - [ ] Username should be unique
-        - [ ] System should let user know if username or email is taken and allow the user to correct the error without wiping/   clearing the form
-        - [ ] The only fields that may be cleared are the password fields
+            - [x] Id, username, email, password (60 characters), created, modified
+        - [x] Password must be hashed (plain text passwords will lose points)
+        - [x] Email should be unique
+        - [x] Username should be unique
+        - [x] System should let user know if username or email is taken and allow the user to correct the error without wiping/   clearing the form
+        - [x] The only fields that may be cleared are the password fields
 
 
 
-    - [ ] User will be able to login to their account (given they enter the correct credentials)
+    - [x] User will be able to login to their account (given they enter the correct credentials)
+        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/32        
         - Form
-            - [ ] User can login with email or username
+            - [x] User can login with email or username
                 - This can be done as a single field or as two separate fields
-            - [ ] Password is required
-        - [ ] User should see friendly error messages when an account either doesn’t exist or if passwords don’t match
-        - [ ] Logging in should fetch the user’s details (and roles) and save them into the session.
-        - [ ] User will be directed to a landing page upon login
-            - [ ]  This is a protected page (non-logged in users shouldn’t have access)
-            - [ ] This can be home, profile, a dashboard, etc
+            - [x] Password is required
+        - [x] User should see friendly error messages when an account either doesn’t exist or if passwords don’t match
+        - [x] Logging in should fetch the user’s details (and roles) and save them into the session.
+        - [x] User will be directed to a landing page upon login
+            - [x]  This is a protected page (non-logged in users shouldn’t have access)
+            - [x] This can be home, profile, a dashboard, etc
 
     
-    - [ ] User will be able to logout
-        - [ ] Logging out will redirect to login page
-        - [ ] User should see a message that they’ve successfully logged out
-        - [ ] Session should be destroyed (so the back button doesn’t allow them access back in)
+    - [x] User will be able to logout
+        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/34        
+        - [x] Logging out will redirect to login page
+        - [x] User should see a message that they’ve successfully logged out
+        - [x] Session should be destroyed (so the back button doesn’t allow them access back in)
     
 
-    - [ ] Basic security rules implemented
-        - Authentication:
-            - [ ] Function to check if user is logged in
-            - [ ] Function should be called on appropriate pages that only allow logged in users
+    - [x] Basic security rules implemented
+        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/36        
+        - - Authentication:
+            - [x] Function to check if user is logged in
+            - [x] Function should be called on appropriate pages that only allow logged in users
         - Roles/Authorization:
-            - [ ] Have a roles table (see below)
+            - [x] Have a roles table (see below)
 
     
-    - [ ] Basic Roles implemented
-        - [ ] Have a Roles table	(id, name, description, is_active, modified, created)
-        - [ ] Have a User Roles table (id, user_id, role_id, is_active, created, modified)
-        - [ ] Include a function to check if a user has a specific role (we won’t use it for this milestone but it should be usable in the future)
+    - [x] Basic Roles implemented
+        - 11/10/21 https://github.com/neeldp/IT202-005/pull/37        
+        - [x] Have a Roles table	(id, name, description, is_active, modified, created)
+        - [x] Have a User Roles table (id, user_id, role_id, is_active, created, modified)
+        - [x] Include a function to check if a user has a specific role (we won’t use it for this milestone but it should be usable in the future)
 
     
-    - [ ] Site should have basic styles/theme applied; everything should be styled
-        - [ ] I.e., forms/input, navigation bar, etc
+    - [x] Site should have basic styles/theme applied; everything should be styled
+        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/39        
+        - [x] I.e., forms/input, navigation bar, etc
 
 
-    - [ ] Any output messages/errors should be “user friendly”
-        - [ ] Any technical errors or debug output displayed will result in a loss of points
+    - [x] Any output messages/errors should be “user friendly”
+        - 11/10/2-021 https://github.com/neeldp/IT202-005/pull/40        
+        - - [x] Any technical errors or debug output displayed will result in a loss of points
 
 
-    - [ ] User will be able to see their profile
-        - [ ] Email, username, etc
+    - [x] User will be able to see their profile
+        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/41       
+        - [x] Email, username, etc
 
 
-    - [ ] User will be able to edit their profile
-        - [ ] Changing username/email should properly check to see if it’s available before allowing the change
-        - [ ] Any other fields should be properly validated
-        - [ ] Allow password reset (only if the existing correct password is provided)
+    - [x] User will be able to edit their profile
+        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/42        
+        - [x] Changing username/email should properly check to see if it’s available before allowing the change
+        - [x] Any other fields should be properly validated
+        - [x] Allow password reset (only if the existing correct password is provided)
             - Hint: logic for the password check would be similar to login
 
 
