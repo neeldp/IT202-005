@@ -23,7 +23,7 @@
 ### Proposal Checklist and Evidence
 
 - Milestone 1
-    - [x] \(11/10/2021) User will be able to register a new account
+    - [x] (11/10/2021) User will be able to register a new account
         - Status: Completed
         - Direct Link: https://ndp69-prod.herokuapp.com/Project/register.php        
         - Pull Request: https://github.com/neeldp/IT202-005/pull/30
@@ -39,24 +39,31 @@
         - Screenshot #5 https://user-images.githubusercontent.com/90344327/141340288-6bb72182-9258-4e6e-bcb9-e717671c2d6a.png
           - Screenshot #5 Username is required
 
-    - [x] User will be able to login to their account (given they enter the correct credentials)
-        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/32        
-        - Form
-            - [x] User can login with email or username
-                - This can be done as a single field or as two separate fields
-            - [x] Password is required
-        - [x] User should see friendly error messages when an account either doesn’t exist or if passwords don’t match
-        - [x] Logging in should fetch the user’s details (and roles) and save them into the session.
-        - [x] User will be directed to a landing page upon login
-            - [x]  This is a protected page (non-logged in users shouldn’t have access)
-            - [x] This can be home, profile, a dashboard, etc
+    - [x] (11/10/2021) User will be able to login to their account (given they enter the correct credentials)
+        - Status Completed
+        - Direct Link: https://ndp69-prod.herokuapp.com/Project/login.php       
+        - Pull Request: https://github.com/neeldp/IT202-005/pull/32        
+        - Screenshots
+        - Screenshot #1 https://user-images.githubusercontent.com/90344327/141405220-eee8137a-433b-42d3-aed1-17a9967ac88f.png      
+          - Screenshot #1 User can login with email or username    
+        - Screenshot #2 https://user-images.githubusercontent.com/90344327/141347534-a622c171-c4f7-4774-b450-f6c29678312a.png        
+          - Screenshot #2 User should see friendly error messages when an account either doesn’t exist or if passwords don’t match
+        - Screenshot #3 https://user-images.githubusercontent.com/90344327/141347659-72928d6b-cf40-4289-95df-d6af5b828d69.png        
+          - Screenshot #3 Logging in should fetch the user’s details (and roles) and save them into the session (Proof)
+        - Screenshot #4 https://user-images.githubusercontent.com/90344327/141347899-8decac49-ab59-4162-b67f-67d78d6e527b.png       
+          - Screenshot #4 User will be directed to a landing page upon login
 
     
-    - [x] User will be able to logout
-        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/34        
-        - [x] Logging out will redirect to login page
-        - [x] User should see a message that they’ve successfully logged out
-        - [x] Session should be destroyed (so the back button doesn’t allow them access back in)
+    - [x] (11/10/2021) User will be able to logout
+        - Status Completed
+        - Direct Link: https://ndp69-prod.herokuapp.com/Project/login.php        
+        - Pull Request: https://github.com/neeldp/IT202-005/pull/34    
+        - Screenshots
+        - Screenshot #1 https://user-images.githubusercontent.com/90344327/141356391-9756dcef-6f29-43a8-9c4a-cd95b9375637.png  
+          - Screenshot #1 Logging out will redirect to login page and session destroyed
+        - Screenshot #2 https://user-images.githubusercontent.com/90344327/141356475-217ce162-2520-4469-8945-3fa1926dc472.png        
+          - Screenshot #2 User should see a message that they’ve successfully logged out
+       
     
 
     - [x] Basic security rules implemented
