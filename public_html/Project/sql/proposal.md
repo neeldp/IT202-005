@@ -23,15 +23,17 @@
 ### Proposal Checklist and Evidence
 
 - Milestone 1
-    - [x] User will be able to register a new account
-        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/30        
-        - Form Fields
-            - [x] Username, email, password, confirm password(other fields optional)
-            - [x] Email is required and must be validated
-            - [x] Username is required
-            - [x] Confirm password’s match
-        - Users Table
-            - [x] Id, username, email, password (60 characters), created, modified
+    - [x] 11/10/2021 User will be able to register a new account
+        - Status: Completed
+        - Direct Link: https://ndp69-prod.herokuapp.com/Project/register.php        
+        - Pull Request: https://github.com/neeldp/IT202-005/pull/30
+        - Screenshots
+        - Screenshot #1 ![image](https://user-images.githubusercontent.com/90344327/141401292-a0c996bf-b580-4c29-82e0-a00e81cd2a79.png)
+          - Screenshot #1 email validation
+        - [x] Email is required and must be validated
+        - [x] Username is required
+        - [x] Confirm password’s match
+        - [x] Id, username, email, password (60 characters), created, modified
         - [x] Password must be hashed (plain text passwords will lose points)
         - [x] Email should be unique
         - [x] Username should be unique
