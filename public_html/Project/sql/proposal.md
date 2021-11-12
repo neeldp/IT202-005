@@ -40,7 +40,7 @@
           - Screenshot #5 Username is required
 
     - [x] (11/10/2021) User will be able to login to their account (given they enter the correct credentials)
-        - Status Completed
+        - Status: Completed
         - Direct Link: https://ndp69-prod.herokuapp.com/Project/login.php       
         - Pull Request: https://github.com/neeldp/IT202-005/pull/32        
         - Screenshots
@@ -55,8 +55,8 @@
 
     
     - [x] (11/10/2021) User will be able to logout
-        - Status Completed
-        - Direct Link: https://ndp69-prod.herokuapp.com/Project/login.php        
+        - Status: Completed
+        - Direct Link: https://ndp69-prod.herokuapp.com/Project/logout.php        
         - Pull Request: https://github.com/neeldp/IT202-005/pull/34    
         - Screenshots
         - Screenshot #1 https://user-images.githubusercontent.com/90344327/141356391-9756dcef-6f29-43a8-9c4a-cd95b9375637.png  
@@ -66,43 +66,63 @@
        
     
 
-    - [x] Basic security rules implemented
-        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/36        
-        - - Authentication:
-            - [x] Function to check if user is logged in
-            - [x] Function should be called on appropriate pages that only allow logged in users
-        - Roles/Authorization:
-            - [x] Have a roles table (see below)
+    - [x] (11/10/2021) security rules implemented
+        - Status: Completed
+        - Pull Request: https://github.com/neeldp/IT202-005/pull/36 
+        - Screenshots       
+        - Screenshot #1 https://user-images.githubusercontent.com/90344327/141371549-76495877-07bb-45ea-b512-5983732346ef.png            
+          - Screenshot #1 Function to check if user is logged in
+        - Screenshot #2 https://user-images.githubusercontent.com/90344327/141371699-9272bf5e-a365-4c8d-8647-b049ae638442.png            
+          - Have a roles table
 
     
-    - [x] Basic Roles implemented
-        - 11/10/21 https://github.com/neeldp/IT202-005/pull/37        
-        - [x] Have a Roles table	(id, name, description, is_active, modified, created)
-        - [x] Have a User Roles table (id, user_id, role_id, is_active, created, modified)
-        - [x] Include a function to check if a user has a specific role (we won’t use it for this milestone but it should be usable in the future)
+    - [x] (11/10/21) Roles implemented
+        - Status: Completed
+        - Pull Request: https://github.com/neeldp/IT202-005/pull/37
+        - Screenshots
+        - Screenshot #1 https://user-images.githubusercontent.com/90344327/141373062-90dc6119-b69b-443b-8e17-9fa8d9c72867.png      
+          - Screenshot #1 Have a Roles table	(id, name, description, is_active, modified, created)
+        - Screenshot #2 https://user-images.githubusercontent.com/90344327/141373123-bd4dbecb-b816-4c64-bacd-8ec62ed677a6.png        
+          - Screenshot #2 Have a User Roles table (id, user_id, role_id, is_active, created, modified)
+        - Screenshot #3 https://user-images.githubusercontent.com/90344327/141373272-69fec1f8-f691-4e2e-afa3-51ce438557a7.png       
+          - Screenshot #3 Include a function to check if a user has a specific role (we won’t use it for this milestone but it should be usable in the future)
 
     
-    - [x] Site should have basic styles/theme applied; everything should be styled
-        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/39        
-        - [x] I.e., forms/input, navigation bar, etc
+    - [x] (11/10/2021) Site should have basic styles/theme applied; everything should be styled
+        - Status: Completed
+        - Pull Request: https://github.com/neeldp/IT202-005/pull/39
+        - Screenshots
+        - Screenshot #1 https://user-images.githubusercontent.com/90344327/141383709-d287d39a-bbe1-4bae-abe3-f278cfda1d1a.png     
+          - Screenshot #1 styled forms/input, navigation bar, etc
 
 
-    - [x] Any output messages/errors should be “user friendly”
-        - 11/10/2-021 https://github.com/neeldp/IT202-005/pull/40        
-        - - [x] Any technical errors or debug output displayed will result in a loss of points
+    - [x] (11/10/2-021) Any output messages/errors should be “user friendly”
+        - Status: Completed
+        - Pull Request: https://github.com/neeldp/IT202-005/pull/40 
+        - Screenshots
+        - Screenshot #1 https://user-images.githubusercontent.com/90344327/141384746-ebe393fa-12f6-4877-bfef-661f78493763.png   
+        - Screenshot #2 https://user-images.githubusercontent.com/90344327/141384734-e22233da-b4bf-4d26-94ba-8b4d55da057d.png          
+          - Any technical errors or debug output displayed will result in a loss of points
 
 
-    - [x] User will be able to see their profile
-        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/41       
-        - [x] Email, username, etc
+    - [x] (11/10/2021) User will be able to see their profile
+        - Status: Completed
+        - Direct Link: https://ndp69-prod.herokuapp.com/Project/profile.php        
+        - Pull Request: https://github.com/neeldp/IT202-005/pull/41 
+        - Screenshots
+        - Screenshot #1 https://user-images.githubusercontent.com/90344327/141387521-2a3a6656-a842-434e-953b-01e6afba6679.png     
+          - Screenshot #1 User profile 
 
 
-    - [x] User will be able to edit their profile
-        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/42        
-        - [x] Changing username/email should properly check to see if it’s available before allowing the change
-        - [x] Any other fields should be properly validated
-        - [x] Allow password reset (only if the existing correct password is provided)
-            - Hint: logic for the password check would be similar to login
+    - [x] 11/10/2021 User will be able to edit their profile
+        - Status: Completed
+        - Direct Link: https://ndp69-prod.herokuapp.com/Project/profile.php          
+        - Pull Request: https://github.com/neeldp/IT202-005/pull/42
+        - Screenshots
+        - Screenshot #1 https://user-images.githubusercontent.com/90344327/141391317-dadb2d6c-f9f6-41b5-9aeb-9308e92a21e0.png                 
+          - Screenshot #1 Changing username/email should properly check to see if it’s available before allowing the change
+        - Screenshot #2 https://user-images.githubusercontent.com/90344327/141391587-1a76757d-ba7c-4903-8203-826fea89239e.png
+          - Screenshot #2 Password reset (only if the existing correct password is provided)
 
 
 
