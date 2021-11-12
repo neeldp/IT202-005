@@ -91,10 +91,11 @@
         - [x] Email, username, etc
 
 
-    - [ ] User will be able to edit their profile
-        - [ ] Changing username/email should properly check to see if it’s available before allowing the change
-        - [ ] Any other fields should be properly validated
-        - [ ] Allow password reset (only if the existing correct password is provided)
+    - [x] User will be able to edit their profile
+        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/42        
+        - [x] Changing username/email should properly check to see if it’s available before allowing the change
+        - [x] Any other fields should be properly validated
+        - [x] Allow password reset (only if the existing correct password is provided)
             - Hint: logic for the password check would be similar to login
 
 
