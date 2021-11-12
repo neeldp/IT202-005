@@ -28,7 +28,7 @@
         - Direct Link: https://ndp69-prod.herokuapp.com/Project/register.php        
         - Pull Request: https://github.com/neeldp/IT202-005/pull/30
         - Screenshots
-        - Screenshot #1 ![image](https://user-images.githubusercontent.com/90344327/141401292-a0c996bf-b580-4c29-82e0-a00e81cd2a79.png)
+        - Screenshot #1 (https://user-images.githubusercontent.com/90344327/141401292-a0c996bf-b580-4c29-82e0-a00e81cd2a79.png)
           - Screenshot #1 Email validation
         - Screenshot #2 ![image](https://user-images.githubusercontent.com/90344327/141341071-ee53a70e-df3c-46d1-b420-47999a0d94ad.png)
           - Screenshot #2 Password must be hashed (plain text passwords will lose points)
