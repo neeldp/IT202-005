@@ -76,16 +76,19 @@
         - [x] Include a function to check if a user has a specific role (we won’t use it for this milestone but it should be usable in the future)
 
     
-    - [ ] Site should have basic styles/theme applied; everything should be styled
-        - [ ] I.e., forms/input, navigation bar, etc
+    - [x] Site should have basic styles/theme applied; everything should be styled
+        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/39        
+        - [x] I.e., forms/input, navigation bar, etc
 
 
-    - [ ] Any output messages/errors should be “user friendly”
-        - [ ] Any technical errors or debug output displayed will result in a loss of points
+    - [x] Any output messages/errors should be “user friendly”
+        - 11/10/2-021 https://github.com/neeldp/IT202-005/pull/40        
+        - - [x] Any technical errors or debug output displayed will result in a loss of points
 
 
-    - [ ] User will be able to see their profile
-        - [ ] Email, username, etc
+    - [x] User will be able to see their profile
+        - 11/10/2021 https://github.com/neeldp/IT202-005/pull/41       
+        - [x] Email, username, etc
 
 
     - [ ] User will be able to edit their profile
