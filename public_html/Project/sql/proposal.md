@@ -2,7 +2,7 @@
 ## Project Summary: This project will create a simple Arcade with scoreboards and competitions based on the implemented game.
 ## Github Link: (Prod Branch of Project Folder)
 ## Project Board Link: https://github.com/neeldp/IT202-005/projects/1
-## Website Link: (Heroku Prod of Project folder)
+## Website Link: https://ndp69-prod.herokuapp.com/Project/login.php
 ## Your Name: Neel Patel
 
 <!--
