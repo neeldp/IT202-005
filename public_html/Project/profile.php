@@ -45,7 +45,6 @@ if (isset($_POST["save"])) {
         //echo "<pre>" . var_export($e->errorInfo, true) . "</pre>";
     }
 
-
     //check/update password
     $current_password = se($_POST, "currentPassword", null, false);
     $new_password = se($_POST, "newPassword", null, false);
