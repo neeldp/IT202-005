@@ -28,7 +28,7 @@
         - Direct Link: https://ndp69-prod.herokuapp.com/Project/register.php        
         - Pull Request: https://github.com/neeldp/IT202-005/pull/30
         - Screenshots
-        - Screenshot #1 ![image](https://user-images.githubusercontent.com/90344327/141401292-a0c996bf-b580-4c29-82e0-a00e81cd2a79.png)
+        - Screenshot #1 ![image](<u>https://user-images.githubusercontent.com/90344327/141401292-a0c996bf-b580-4c29-82e0-a00e81cd2a79.png<u>)
           - Screenshot #1 email validation
         - [x] Email is required and must be validated
         - [x] Username is required
