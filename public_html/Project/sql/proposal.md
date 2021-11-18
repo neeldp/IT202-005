@@ -23,77 +23,155 @@
 ### Proposal Checklist and Evidence
 
 - Milestone 1
-    - [ ] User will be able to register a new account
-        - Form Fields
-            - [ ] Username, email, password, confirm password(other fields optional)
-            - [ ] Email is required and must be validated
-            - [ ] Username is required
-            - [ ] Confirm password’s match
-        - Users Table
-            - [ ] Id, username, email, password (60 characters), created, modified
-        - [ ] Password must be hashed (plain text passwords will lose points)
-        - [ ] Email should be unique
-        - [ ] Username should be unique
-        - [ ] System should let user know if username or email is taken and allow the user to correct the error without wiping/   clearing the form
-        - [ ] The only fields that may be cleared are the password fields
+    - [x] (11/10/2021) User will be able to register a new account
+        - Status: Completed
+        - Direct Link: https://ndp69-prod.herokuapp.com/Project/register.php        
+        - Pull Request: https://github.com/neeldp/IT202-005/pull/30
+        - Screenshots
+        - Screenshot #1 https://user-images.githubusercontent.com/90344327/141401292-a0c996bf-b580-4c29-82e0-a00e81cd2a79.png
+          - Screenshot #1 Email validation
+        - Screenshot #2 https://user-images.githubusercontent.com/90344327/141341071-ee53a70e-df3c-46d1-b420-47999a0d94ad.png
+          - Screenshot #2 Password must be hashed (plain text passwords will lose points)
+        - Screenshot #3 https://user-images.githubusercontent.com/90344327/141341071-ee53a70e-df3c-46d1-b420-47999a0d94ad.png
+          - Screenshot #3 Users Table
+        - Screenshot #4 https://user-images.githubusercontent.com/90344327/141340216-b060a2bb-8e83-413d-8f22-1dc04fd9376a.png
+          - Screenshot #4 Email is required
+        - Screenshot #5 https://user-images.githubusercontent.com/90344327/141340288-6bb72182-9258-4e6e-bcb9-e717671c2d6a.png
+          - Screenshot #5 Username is required
 
-
-
-    - [ ] User will be able to login to their account (given they enter the correct credentials)
-        - Form
-            - [ ] User can login with email or username
-                - This can be done as a single field or as two separate fields
-            - [ ] Password is required
-        - [ ] User should see friendly error messages when an account either doesn’t exist or if passwords don’t match
-        - [ ] Logging in should fetch the user’s details (and roles) and save them into the session.
-        - [ ] User will be directed to a landing page upon login
-            - [ ]  This is a protected page (non-logged in users shouldn’t have access)
-            - [ ] This can be home, profile, a dashboard, etc
-
-    
-    - [ ] User will be able to logout
-        - [ ] Logging out will redirect to login page
-        - [ ] User should see a message that they’ve successfully logged out
-        - [ ] Session should be destroyed (so the back button doesn’t allow them access back in)
-    
-
-    - [ ] Basic security rules implemented
-        - Authentication:
-            - [ ] Function to check if user is logged in
-            - [ ] Function should be called on appropriate pages that only allow logged in users
-        - Roles/Authorization:
-            - [ ] Have a roles table (see below)
+    - [x] (11/10/2021) User will be able to login to their account (given they enter the correct credentials)
+        - Status: Completed
+        - Direct Link: https://ndp69-prod.herokuapp.com/Project/login.php       
+        - Pull Request: https://github.com/neeldp/IT202-005/pull/32        
+        - Screenshots
+        - Screenshot #1 https://user-images.githubusercontent.com/90344327/141405220-eee8137a-433b-42d3-aed1-17a9967ac88f.png      
+          - Screenshot #1 User can login with email or username    
+        - Screenshot #2 https://user-images.githubusercontent.com/90344327/141347534-a622c171-c4f7-4774-b450-f6c29678312a.png        
+          - Screenshot #2 User should see friendly error messages when an account either doesn’t exist or if passwords don’t match
+        - Screenshot #3 https://user-images.githubusercontent.com/90344327/141347659-72928d6b-cf40-4289-95df-d6af5b828d69.png        
+          - Screenshot #3 Logging in should fetch the user’s details (and roles) and save them into the session (Proof)
+        - Screenshot #4 https://user-images.githubusercontent.com/90344327/141347899-8decac49-ab59-4162-b67f-67d78d6e527b.png       
+          - Screenshot #4 User will be directed to a landing page upon login
 
     
-    - [ ] Basic Roles implemented
-        - [ ] Have a Roles table	(id, name, description, is_active, modified, created)
-        - [ ] Have a User Roles table (id, user_id, role_id, is_active, created, modified)
-        - [ ] Include a function to check if a user has a specific role (we won’t use it for this milestone but it should be usable in the future)
+    - [x] (11/10/2021) User will be able to logout
+        - Status: Completed
+        - Direct Link: https://ndp69-prod.herokuapp.com/Project/logout.php        
+        - Pull Request: https://github.com/neeldp/IT202-005/pull/34    
+        - Screenshots
+        - Screenshot #1 https://user-images.githubusercontent.com/90344327/141356391-9756dcef-6f29-43a8-9c4a-cd95b9375637.png  
+          - Screenshot #1 Logging out will redirect to login page and session destroyed
+        - Screenshot #2 https://user-images.githubusercontent.com/90344327/141356475-217ce162-2520-4469-8945-3fa1926dc472.png        
+          - Screenshot #2 User should see a message that they’ve successfully logged out
+       
+    
+
+    - [x] (11/10/2021) security rules implemented
+        - Status: Completed
+        - Pull Request: https://github.com/neeldp/IT202-005/pull/36 
+        - Screenshots       
+        - Screenshot #1 https://user-images.githubusercontent.com/90344327/141371549-76495877-07bb-45ea-b512-5983732346ef.png            
+          - Screenshot #1 Function to check if user is logged in
+        - Screenshot #2 https://user-images.githubusercontent.com/90344327/141371699-9272bf5e-a365-4c8d-8647-b049ae638442.png            
+          - Have a roles table
 
     
-    - [ ] Site should have basic styles/theme applied; everything should be styled
-        - [ ] I.e., forms/input, navigation bar, etc
+    - [x] (11/10/21) Roles implemented
+        - Status: Completed
+        - Pull Request: https://github.com/neeldp/IT202-005/pull/37
+        - Screenshots
+        - Screenshot #1 https://user-images.githubusercontent.com/90344327/141373062-90dc6119-b69b-443b-8e17-9fa8d9c72867.png      
+          - Screenshot #1 Have a Roles table	(id, name, description, is_active, modified, created)
+        - Screenshot #2 https://user-images.githubusercontent.com/90344327/141373123-bd4dbecb-b816-4c64-bacd-8ec62ed677a6.png        
+          - Screenshot #2 Have a User Roles table (id, user_id, role_id, is_active, created, modified)
+        - Screenshot #3 https://user-images.githubusercontent.com/90344327/141373272-69fec1f8-f691-4e2e-afa3-51ce438557a7.png       
+          - Screenshot #3 Include a function to check if a user has a specific role (we won’t use it for this milestone but it should be usable in the future)
+
+    
+    - [x] (11/10/2021) Site should have basic styles/theme applied; everything should be styled
+        - Status: Completed
+        - Pull Request: https://github.com/neeldp/IT202-005/pull/39
+        - Screenshots
+        - Screenshot #1 https://user-images.githubusercontent.com/90344327/141383709-d287d39a-bbe1-4bae-abe3-f278cfda1d1a.png     
+          - Screenshot #1 styled forms/input, navigation bar, etc
 
 
-    - [ ] Any output messages/errors should be “user friendly”
-        - [ ] Any technical errors or debug output displayed will result in a loss of points
+    - [x] (11/10/2-021) Any output messages/errors should be “user friendly”
+        - Status: Completed
+        - Pull Request: https://github.com/neeldp/IT202-005/pull/40 
+        - Screenshots
+        - Screenshot #1 https://user-images.githubusercontent.com/90344327/141384746-ebe393fa-12f6-4877-bfef-661f78493763.png   
+        - Screenshot #2 https://user-images.githubusercontent.com/90344327/141384734-e22233da-b4bf-4d26-94ba-8b4d55da057d.png          
+          - Any technical errors or debug output displayed will result in a loss of points
 
 
-    - [ ] User will be able to see their profile
-        - [ ] Email, username, etc
+    - [x] (11/10/2021) User will be able to see their profile
+        - Status: Completed
+        - Direct Link: https://ndp69-prod.herokuapp.com/Project/profile.php        
+        - Pull Request: https://github.com/neeldp/IT202-005/pull/41 
+        - Screenshots
+        - Screenshot #1 https://user-images.githubusercontent.com/90344327/141387521-2a3a6656-a842-434e-953b-01e6afba6679.png     
+          - Screenshot #1 User profile 
 
 
-    - [ ] User will be able to edit their profile
-        - [ ] Changing username/email should properly check to see if it’s available before allowing the change
-        - [ ] Any other fields should be properly validated
-        - [ ] Allow password reset (only if the existing correct password is provided)
-            - Hint: logic for the password check would be similar to login
+    - [x] 11/10/2021 User will be able to edit their profile
+        - Status: Completed
+        - Direct Link: https://ndp69-prod.herokuapp.com/Project/profile.php          
+        - Pull Request: https://github.com/neeldp/IT202-005/pull/42
+        - Screenshots
+        - Screenshot #1 https://user-images.githubusercontent.com/90344327/141391317-dadb2d6c-f9f6-41b5-9aeb-9308e92a21e0.png                 
+          - Screenshot #1 Changing username/email should properly check to see if it’s available before allowing the change
+        - Screenshot #2 https://user-images.githubusercontent.com/90344327/141391587-1a76757d-ba7c-4903-8203-826fea89239e.png
+          - Screenshot #2 Password reset (only if the existing correct password is provided)
 
 
 
 
 
 - Milestone 2
+    - [ ] \(mm/dd/yyyy of completion) Pick a simple game to implement, anything that generates a score that’s more advanced than a simple random number generator 
+    -  List of Evidence of Feature Completion
+        - Status: Pending (Completed, Partially working, Incomplete, Pending)
+        - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+        - Pull Requests
+        - PR link #1 (repeat as necessary)
+        - Screenshots
+        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
+            - Screenshot #1 description explaining what you're trying to show
+
+
+    - [ ] \(mm/dd/yyyy of completion) The system will save the user’s score at the end of the game if the user is logged in
+    -  List of Evidence of Feature Completion
+        - Status: Pending (Completed, Partially working, Incomplete, Pending)
+        - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+        - Pull Requests
+        - PR link #1 (repeat as necessary)
+        - Screenshots
+        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
+            - Screenshot #1 description explaining what you're trying to show
+
+
+    - [ ] \(mm/dd/yyyy of completion) The user will be able to see their last 10 scores
+    -  List of Evidence of Feature Completion
+        - Status: Pending (Completed, Partially working, Incomplete, Pending)
+        - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+        - Pull Requests
+        - PR link #1 (repeat as necessary)
+        - Screenshots
+        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
+            - Screenshot #1 description explaining what you're trying to show
+
+
+    - [ ] \(mm/dd/yyyy of completion) Create functions that output the following scoreboards
+    -  List of Evidence of Feature Completion
+        - Status: Pending (Completed, Partially working, Incomplete, Pending)
+        - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+        - Pull Requests
+        - PR link #1 (repeat as necessary)
+        - Screenshots
+        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
+            - Screenshot #1 description explaining what you're trying to show
+
 - Milestone 3
 - Milestone 4
 ### Intructions
