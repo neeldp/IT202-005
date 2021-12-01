@@ -1,8 +1,8 @@
 # Project Name: Simple Arcade
 ## Project Summary: This project will create a simple Arcade with scoreboards and competitions based on the implemented game.
-## Github Link: (Prod Branch of Project Folder)
+## Github Link: https://github.com/neeldp/IT202-005/tree/prod
 ## Project Board Link: https://github.com/neeldp/IT202-005/projects/1
-## Website Link: (Heroku Prod of Project folder)
+## Website Link: https://ndp69-prod.herokuapp.com/Project/login.php
 ## Your Name: Neel Patel
 
 <!--
@@ -23,7 +23,7 @@
 ### Proposal Checklist and Evidence
 
 - Milestone 1
-     - [x] (11/10/2021) User will be able to register a new account
+    - [x] (11/10/2021) User will be able to register a new account
         - Status: Completed
         - Direct Link: https://ndp69-prod.herokuapp.com/Project/register.php        
         - Pull Request: https://github.com/neeldp/IT202-005/pull/30
