@@ -139,6 +139,28 @@ $username = get_username();
         return isValid;
     }
 </script>
+
+<div>
+    <?php 
+    $user_id = get_user_id();
+    $scores = get_latest_scores($user_id); 
+    ?>
+    <h3>Score History</h3>
+    <table class="table text-light">
+        <thead>
+            <th>Score</th>
+            <th>Time</th>
+        </thead>
+        <tbody>
+            <?php foreach ($scores as $score) : ?>
+                <tr>
+                    <td><?php se($score, "score", 0); ?></td>
+                    <td><?php se($score, "created", "-"); ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+</div>
 <?php
 require_once(__DIR__ . "/../../partials/flash.php");
 ?>

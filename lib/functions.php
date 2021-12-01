@@ -133,5 +133,22 @@ function get_url($dest)
     //handle relative path
     return $BASE_PATH . $dest;
 }
+function get_latest_scores($user_id)
+{
+    $db = getDB();
+    $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+    $query = "SELECT score, created FROM Scores WHERE user_id = :uid ORDER BY created desc LIMIT 10";
+    $stmt = $db->prepare($query);
+    try {
+        $stmt->execute([":uid" => $user_id]);
+        $r = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        if ($r) 
+        {
+            return $r;
+        }
+    }catch(PDOException $e){
+        error_log(var_export($e, true));
+    }
+}
 
 ?>
