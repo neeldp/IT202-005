@@ -1,8 +1,8 @@
 # Project Name: Simple Arcade
 ## Project Summary: This project will create a simple Arcade with scoreboards and competitions based on the implemented game.
-## Github Link: (Prod Branch of Project Folder)
+## Github Link: https://github.com/neeldp/IT202-005/tree/prod
 ## Project Board Link: https://github.com/neeldp/IT202-005/projects/1
-## Website Link: (Heroku Prod of Project folder)
+## Website Link: https://ndp69-prod.herokuapp.com/Project/login.php
 ## Your Name: Neel Patel
 
 <!--
@@ -125,19 +125,17 @@
           - Screenshot #2 Password reset (only if the existing correct password is provided)
 
 
-
-
-
 - Milestone 2
+
     - [ ] \(mm/dd/yyyy of completion) Pick a simple game to implement, anything that generates a score that’s more advanced than a simple random number generator 
-    -  List of Evidence of Feature Completion
-        - Status: Pending (Completed, Partially working, Incomplete, Pending)
-        - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-        - Pull Requests
-        - PR link #1 (repeat as necessary)
-        - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-            - Screenshot #1 description explaining what you're trying to show
+      -  List of Evidence of Feature Completion
+          - Status: Pending (Completed, Partially working, Incomplete, Pending)
+          - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+          - Pull Requests
+          - PR link #1 (repeat as necessary)
+          - Screenshots
+          - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
+              - Screenshot #1 description explaining what you're trying to show
 
 
     - [ ] \(mm/dd/yyyy of completion) The system will save the user’s score at the end of the game if the user is logged in
@@ -171,9 +169,6 @@
         - Screenshots
         - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
             - Screenshot #1 description explaining what you're trying to show
-
-
-
 
 
 - Milestone 3
