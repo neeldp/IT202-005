@@ -127,48 +127,23 @@
 
 - Milestone 2
 
-    - [ ] \(mm/dd/yyyy of completion) Pick a simple game to implement, anything that generates a score that’s more advanced than a simple random number generator 
-      -  List of Evidence of Feature Completion
-          - Status: Pending (Completed, Partially working, Incomplete, Pending)
-          - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-          - Pull Requests
-          - PR link #1 (repeat as necessary)
-          - Screenshots
-          - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-              - Screenshot #1 description explaining what you're trying to show
+<table><tr><td>milestone 2</td></tr><tr><td><table><tr><td>F1 - Pick a simple game to implement, anything that generates a score that’s more advanced than a simple random number generator (may build off of a sample from the site shared in class) ()</td></tr><tr><td>Status: complete</td></tr><tr><td>Links:<p>
 
+ [https://ndp69-prod.herokuapp.com/Project/game.php](https://ndp69-prod.herokuapp.com/Project/game.php)</p></td></tr><tr><td>PRs:<p>
 
-    - [ ] \(mm/dd/yyyy of completion) The system will save the user’s score at the end of the game if the user is logged in
-    -  List of Evidence of Feature Completion
-        - Status: Pending (Completed, Partially working, Incomplete, Pending)
-        - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-        - Pull Requests
-        - PR link #1 (repeat as necessary)
-        - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-            - Screenshot #1 description explaining what you're trying to show
+ [https://github.com/neeldp/IT202-005/pull/62](https://github.com/neeldp/IT202-005/pull/62)</p></td></tr><tr><td><table><tr><td>F1 - What game will you be doing?<tr><td>Status: completed</td></tr><tr><td><img width="100%" src="https://user-images.githubusercontent.com/90344327/144314444-40d383d0-0729-4a49-9278-aebe382e3c93.png"><p>Game: Collect the Square</td></tr></td></tr></table></td></tr><tr><td><table><tr><td>F1 - Describe game<tr><td>Status: completed</td></tr><tr><td><img width="100%" src="https://user-images.githubusercontent.com/90344327/144315092-b95a06c0-d5f5-41f7-956c-436f8307a719.png"><p>Describe: When a small square is collected, the size of the square increases. If you reach a multiple of 25 before the time runs out, 10 seconds are added to the current time.</td></tr></td></tr></table></td></tr><table><tr><td>F2 - The system will save the user’s score at the end of the game if the user is logged in ()</td></tr><tr><td>Status: complete</td></tr><tr><td>Links:<p>
 
+ [https://ndp69-prod.herokuapp.com/Project/game.php](https://ndp69-prod.herokuapp.com/Project/game.php)</p></td></tr><tr><td>PRs:<p>
 
-    - [ ] \(mm/dd/yyyy of completion) The user will be able to see their last 10 scores
-    -  List of Evidence of Feature Completion
-        - Status: Pending (Completed, Partially working, Incomplete, Pending)
-        - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-        - Pull Requests
-        - PR link #1 (repeat as necessary)
-        - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-            - Screenshot #1 description explaining what you're trying to show
+ [https://github.com/neeldp/IT202-005/pull/64](https://github.com/neeldp/IT202-005/pull/64)</p></td></tr><tr><td><table><tr><td>F2 - There should be a scores table (id, user_id, score, created)<tr><td>Status: completed</td></tr><tr><td><img width="100%" src="https://user-images.githubusercontent.com/90344327/144315830-e3b09646-d5b7-4233-8fcd-87a184ac76e9.png"><p>Scores Table in DB</td></tr></td></tr></table></td></tr><tr><td><table><tr><td>F2 - Each received score is a new entry (scores will not be updated)<tr><td>Status: completed</td></tr><tr><td><img width="100%" src="https://user-images.githubusercontent.com/90344327/144316060-0c0264cb-c7f4-45dd-9afe-bcc48fd7071c.png"><p>Code for score insertion </td></tr></td></tr></table></td></tr><table><tr><td>F3 - The user will be able to see their last 10 scores ()</td></tr><tr><td>Status: complete</td></tr><tr><td>Links:<p>
 
+ [https://ndp69-prod.herokuapp.com/Project/profile.php](https://ndp69-prod.herokuapp.com/Project/profile.php)</p></td></tr><tr><td>PRs:<p>
 
-    - [ ] \(mm/dd/yyyy of completion) Create functions that output the following scoreboards
-    -  List of Evidence of Feature Completion
-        - Status: Pending (Completed, Partially working, Incomplete, Pending)
-        - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-        - Pull Requests
-        - PR link #1 (repeat as necessary)
-        - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-            - Screenshot #1 description explaining what you're trying to show
+ [https://github.com/neeldp/IT202-005/pull/65](https://github.com/neeldp/IT202-005/pull/65)</p></td></tr><tr><td><table><tr><td>F3 - Show on their profile page<tr><td>Status: completed</td></tr><tr><td><img width="100%" src="https://user-images.githubusercontent.com/90344327/144317201-0448378b-27aa-4465-8026-e3f99bcea671.png"><p>The last 10 scores are shown on the profile page</td></tr></td></tr></table></td></tr><tr><td><table><tr><td>F3 - Ordered by most recent<tr><td>Status: completed</td></tr><tr><td><img width="100%" src="https://user-images.githubusercontent.com/90344327/144317354-94e79cce-db4a-4b0e-9c6f-8264d38e6e5a.png"><p>SQL code that shows the scores are ordered by most recent </td></tr></td></tr></table></td></tr><table><tr><td>F4 - Create functions that output the following scoreboards (this will be used later) ()</td></tr><tr><td>Status: complete</td></tr><tr><td>Links:<p>
+
+ [https://ndp69-prod.herokuapp.com/Project/game.php](https://ndp69-prod.herokuapp.com/Project/game.php)</p></td></tr><tr><td>PRs:<p>
+
+ [https://github.com/neeldp/IT202-005/pull/66](https://github.com/neeldp/IT202-005/pull/66)</p></td></tr><tr><td><table><tr><td>F4 - Top 10 Weekly, Top 10 Monthly, Top 10 Lifetime<tr><td>Status: completed</td></tr><tr><td><img width="100%" src="https://user-images.githubusercontent.com/90344327/144318265-67a69564-cda7-4c33-ba96-dbfe26cd4bb1.png"><p>get_Top_10() function returns top 10 scores weekly, monthly, and lifetime</td></tr></td></tr></table></td></tr><tr><td><table><tr><td>F4 - Scoreboards should show no more than 10 results; if there are no results a proper message should be displayed (i.e., “No [time period] scores to display”)<tr><td>Status: completed</td></tr><tr><td><img width="100%" src="https://user-images.githubusercontent.com/90344327/144318435-a75b1593-62f6-4f90-8d70-682b4784fb05.png"><p>Message for no scores</td></tr></td></tr></table></td></tr></td></tr></table>
 
 
 - Milestone 3
