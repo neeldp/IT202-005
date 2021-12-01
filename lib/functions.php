@@ -151,4 +151,34 @@ function get_latest_scores($user_id)
     }
 }
 
+function get_top_10($duration)
+{
+    $d = "day";
+    if (in_array($duration, ["day", "week", "month", "lifetime"])) {
+        //variable is safe
+        $d = $duration;
+    }
+    $db = getDB();
+    $query = "SELECT user_id, score, created FROM Scores";
+    if ($d !== "lifetime") {
+        //be very careful passing in a variable directly to SQL, I ensure it's a specific value from the in_array() above
+        $query .= " WHERE created >= DATE_SUB(NOW(), INTERVAL 1 $d)";
+    }
+    //remember to prefix any ambiguous columns (Users and Scores both have created)
+    $query .= " ORDER BY score Desc, created desc LIMIT 10"; //newest of the same score is ranked higher
+    error_log($query);
+    $stmt = $db->prepare($query);
+    $results = [];
+    try {
+        $stmt->execute();
+        $r = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        if ($r) {
+            $results = $r;
+        }
+    } catch (PDOException $e) {
+        error_log("Error fetching scores for $d: " . var_export($e->errorInfo, true));
+    }
+    return $results;
+}
+
 ?>
