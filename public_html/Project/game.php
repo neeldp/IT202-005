@@ -120,7 +120,22 @@ function endGame() {
   context.font = '24px Arial';
   context.textAlign = 'center';
   context.fillText('Final Score: ' + score, canvas.width / 2, canvas.height / 2);
+  let http = new XMLHttpRequest();
+  http.onreadystatechange = () => {
+      if (http.readyState == 4) {
+        if (http.status === 200) {
+          let data = JSON.parse(http.responseText);
+          console.log("received data", data);
+          flash(data.message, "success");
+        }
+        console.log(http);
+      }
+  }
+  http.open("POST", "score.php", true);
+  http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  http.send(`score=${score}`);
 }
+
 
 // Move the target square to a random position
 function moveTarget() {
@@ -203,3 +218,32 @@ function draw() {
 menu();
 canvas.focus();
 </script>
+
+<div>
+    <?php 
+    $scores = get_top_10("month"); 
+    ?>
+    <h3>Daily high scores</h3>
+    <table class="table text-light">
+        <thead>
+            <th>User</th>
+            <th>Score</th>
+            <th>Time</th>
+        </thead>
+        <tbody>
+          <?php if (!$scores || count($scores) == 0) : ?>
+            <tr>
+            <td colspan="100%">No scores available</td>
+            </tr>
+          <?php else : ?>
+            <?php foreach ($scores as $score) : ?>
+              <tr>
+                <td><?php se($score, "user_id", 0); ?></td>
+                <td><?php se($score, "score", 0); ?></td>
+                <td><?php se($score, "created", "-"); ?></td>
+              </tr>
+            <?php endforeach; ?>
+          <?php endif; ?>
+        </tbody>
+    </table>
+</div>
