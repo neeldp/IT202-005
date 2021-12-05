@@ -161,6 +161,27 @@ $username = get_username();
         </tbody>
     </table>
 </div>
+
+<div>
+    <?php 
+    $points = [];
+    $query = "SELECT points FROM Users WHERE id = :uid";
+    error_log($query);
+    $stmt = $db->prepare($query);
+    try {
+        $stmt->execute([":uid" => $user_id]);
+        $r = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        if ($r) {
+            $points = $r;
+        }
+    } catch (PDOException $e) {
+        error_log(var_export($e, true));
+    }
+    ?>
+
+    <h3>Points <?php se($points, "points", 0); ?> </h3>
+</div>
+
 <?php
 require_once(__DIR__ . "/../../partials/flash.php");
 ?>
