@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `Competitions`(
     `cost_to_create` int DEFAULT 1,
     `created` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     `modified` TIMESTAMP DEFAULT CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
-    check (`min_score` >= 1),
+    check (`min_score` >= 0),
     check (`starting_reward` >= 1),
     check (`current_reward` >= `starting_reward`),
     check (`min_participants` >= 3),
