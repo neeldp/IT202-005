@@ -135,7 +135,6 @@ if (isset($_POST["join"])) {
             }
 
             echo "Successfully joined competition";
-
         }
         else {
             echo "You can't afford this right now";
