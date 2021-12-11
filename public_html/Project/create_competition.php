@@ -36,6 +36,8 @@ if (isset($_POST["title"]) && !empty($_POST["title"])) {
         $second_place_reward = $_POST["second_place_reward"];
         $third_place_reward = $_POST["third_place_reward"];
 
+        
+        
         $stmt = $db->prepare("INSERT INTO Competitions(`name`, `duration`, `starting_reward`, `join_fee`, `min_participants`, `min_score`, `first_place_per`, `second_place_per`, `third_place_per`, cost_to_create) VALUES('{$title}', $duration, $starting_reward, $join_cost, $min_participants, $min_score, $first_place_reward, $second_place_reward, $third_place_reward, $cost) ");
         try 
         {
@@ -45,6 +47,8 @@ if (isset($_POST["title"]) && !empty($_POST["title"])) {
             error_log(var_export($e, true));
         }
 
+        
+        
         $cost = 0 - $cost;
         
         $stmt = $db->prepare("INSERT INTO PointsHistory(`user_id`, `point_change`) VALUES (:uid, :cost)");
@@ -58,6 +62,8 @@ if (isset($_POST["title"]) && !empty($_POST["title"])) {
             error_log(var_export($e, true));
         }
 
+        
+        
         $query = "UPDATE Users SET points = (SELECT IFNULL(sum(point_change),0) FROM PointsHistory WHERE user_id = :uid) WHERE id = :id";
 
         $stmt = $db->prepare($query);
