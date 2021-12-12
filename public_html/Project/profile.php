@@ -144,6 +144,7 @@ $username = get_username();
     <?php 
     $user_id = get_user_id();
     $scores = get_latest_scores($user_id); 
+    if($scores):
     ?>
     <h3>Score History</h3>
     <table class="table text-light">
@@ -160,7 +161,54 @@ $username = get_username();
             <?php endforeach; ?>
         </tbody>
     </table>
+    <?php endif;?>
 </div>
+
+<div>
+    <?php
+
+    //$stmt = $db->prepare("INSERT INTO PointsHistory(`user_id`, `point_change`) VALUES (:uid, 1)");
+    //try{
+    //    $stmt->execute([":uid"=>get_user_id()]);
+    //}
+    //catch(PDOException $e){
+    //    error_log(var_export($e, true));
+    //}
+
+    $query = "UPDATE Users SET points = (SELECT IFNULL(sum(point_change),0) FROM PointsHistory WHERE user_id = :uid) WHERE id = :id";
+    error_log($query);
+    $stmt = $db->prepare($query);
+    try 
+    {
+        $stmt->execute([":uid" => $user_id, ":id" => $user_id]);
+    } 
+    catch (PDOException $e) {
+        error_log(var_export($e, true));
+    }
+    ?>
+
+    <?php 
+    $data = [];
+    $query = "SELECT points FROM Users WHERE id = :uid";
+    error_log($query);
+    $stmt = $db->prepare($query);
+    try 
+    {
+        $stmt->execute([":uid" => $user_id]);
+        $r = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        if ($r)
+        {
+            $data = $r;
+        }
+    } 
+    catch (PDOException $e) {
+        error_log(var_export($e, true));
+    }
+    ?>
+
+    <h3>Points <?php foreach ($data as $points) : se($points, "points", 0); endforeach; ?> </h3>
+</div>
+
 <?php
 require_once(__DIR__ . "/../../partials/flash.php");
 ?>

@@ -1,0 +1,1 @@
+ALTER TABLE Users ADD COLUMN points int not null DEFAULT 0;

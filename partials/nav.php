@@ -26,6 +26,7 @@ require_once(__DIR__ . "/../lib/functions.php");
 ?>
 <!-- include css and js files -->
 <link rel="stylesheet" href="<?php echo get_url('styles.css'); ?>">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="<?php echo get_url('helpers.js'); ?>"></script>
 <nav>
     <ul>
@@ -33,15 +34,18 @@ require_once(__DIR__ . "/../lib/functions.php");
             <li><a href="<?php echo get_url('home.php'); ?>">Home</a></li>
             <li><a href="<?php echo get_url('profile.php'); ?>">Profile</a></li>
             <li><a href="<?php echo get_url('game.php'); ?>">Collect the Square</a></li>
+            <li><a href="<?php echo get_url('create_competition.php'); ?>">Create Competition</a></li>
+            <li><a href="<?php echo get_url('list_competitions.php'); ?>">View Competitions</a></li>
         <?php endif; ?>
         <?php if (!is_logged_in()) : ?>
             <li><a href="<?php echo get_url('login.php'); ?>">Login</a></li>
             <li><a href="<?php echo get_url('register.php'); ?>">Register</a></li>
         <?php endif; ?>
-        <?php if (has_role("Admin")) : ?>
+        <?php if (has_role("Admin")) :?>
             <li><a href="<?php echo get_url('admin/create_role.php'); ?>">Create Role</a></li>
             <li><a href="<?php echo get_url('admin/list_roles.php'); ?>">List Roles</a></li>
             <li><a href="<?php echo get_url('admin/assign_roles.php'); ?>">Assign Roles</a></li>
+            <li><a href="<?php echo get_url('admin/payout.php'); ?>">Payout</a></li>
         <?php endif; ?>
         <?php if (is_logged_in()) : ?>
             <li><a href="<?php echo get_url('logout.php'); ?>">Logout</a></li>
