@@ -144,6 +144,7 @@ $username = get_username();
     <?php 
     $user_id = get_user_id();
     $scores = get_latest_scores($user_id); 
+    if($scores):
     ?>
     <h3>Score History</h3>
     <table class="table text-light">
@@ -160,6 +161,7 @@ $username = get_username();
             <?php endforeach; ?>
         </tbody>
     </table>
+    <?php endif;?>
 </div>
 
 <div>
