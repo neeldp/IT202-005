@@ -37,10 +37,6 @@ try {
                         $score = se($row, "score", 0, false);
                         $user_id = se($row, "user_id", -1, false);
                         if ($index == 0) {
-                            //if (change_bills($fpr, "won-comp", -1, $aid, "First place in $title with score of $score")) {
-                            //    $atleastOne = true;
-                            //}
-                            //elog("User $user_id First place in $title with score of $score");
 
                             $stmt = $db->prepare("INSERT INTO PointsHistory(`user_id`, `point_change`, `reason`) VALUES (:uid, :p_c, 'Competition')");
                             try{
@@ -52,10 +48,6 @@ try {
                             $atleastOne = true;
 
                         } else if ($index == 1) {
-                            //if (change_bills($spr, "won-comp", -1, $aid, "Second place in $title with score of $score")) {
-                            //    $atleastOne = true;
-                            //}
-                            //elog("User $user_id Second place in $title with score of $score");
                             $stmt = $db->prepare("INSERT INTO PointsHistory(`user_id`, `point_change`, `reason`) VALUES (:uid, :p_c, 'Competition')");
                             try{
                                 $stmt->execute([":uid"=>$user_id, "p_c"=>$spr]);
@@ -65,10 +57,7 @@ try {
                             }
                             $atleastOne = true;
                         } else if ($index == 2) {
-                            //if (change_bills($tpr, "won-comp", -1, $aid, "Third place in $title with score of $score")) {
-                            //    $atleastOne = true;
-                            //}
-                            //elog("User $user_id Third place in $title with score of $score");
+
                             $stmt = $db->prepare("INSERT INTO PointsHistory(`user_id`, `point_change`, `reason`) VALUES (:uid, :p_c, 'Competition')");
                             try{
                                 $stmt->execute([":uid"=>$user_id, "p_c"=>$tpr]);
@@ -100,13 +89,9 @@ try {
 if (count($calced_comps) > 0) {
     $query = "UPDATE Competitions set paid_out = 1 WHERE id in ";
     $query .= " (" . str_repeat("?,", count($calced_comps) - 1) . "?)";
-    //error_log("query: $query");
-    //error_log("ids: " . var_export($comp_id, true));
     $stmt = $db->prepare($query);
     try {
         $stmt->execute($calced_comps);
-        //$updated = $stmt->rowCount();
-        //echo "Marked $updated comps complete and calced";
     } catch (PDOException $e) {
         error_log("Closing valid comps error: " . var_export($e, true));
     }

@@ -152,7 +152,8 @@ if (isset($_POST["join"])) {
 
 //handle page load
 //TODO fix join
-$stmt = $db->prepare("SELECT id, name, current_participants, min_participants, current_reward, min_score, expires, join_fee, starting_reward FROM Competitions WHERE expires > current_timestamp() AND paid_out < 1 ORDER BY expires ASC LIMIT 10");
+$stmt = $db->prepare("SELECT id, name, current_participants, min_participants, current_reward, min_score, expires, join_fee, starting_reward 
+    FROM Competitions WHERE expires > current_timestamp() AND paid_out < 1 ORDER BY expires ASC LIMIT 10");
 
 $results = [];
 try {
