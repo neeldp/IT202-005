@@ -36,6 +36,7 @@ require_once(__DIR__ . "/../lib/functions.php");
             <li><a href="<?php echo get_url('game.php'); ?>">Collect the Square</a></li>
             <li><a href="<?php echo get_url('create_competition.php'); ?>">Create Competition</a></li>
             <li><a href="<?php echo get_url('list_competitions.php'); ?>">View Competitions</a></li>
+            <li><a href="<?php echo get_url('score_history.php'); ?>">Score History</a></li>
         <?php endif; ?>
         <?php if (!is_logged_in()) : ?>
             <li><a href="<?php echo get_url('login.php'); ?>">Login</a></li>
