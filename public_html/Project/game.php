@@ -221,4 +221,5 @@ canvas.focus();
 
 <?php
     $duration = "lifetime";
-    require(__DIR__ . "/../../partials/score_table.php"); ?>
+    require(__DIR__ . "/../../partials/score_table.php"); 
+?>
