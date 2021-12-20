@@ -152,20 +152,45 @@ if (isset($_POST["join"])) {
 
 //handle page load
 //TODO fix join
-$stmt = $db->prepare("SELECT id, name, current_participants, min_participants, current_reward, min_score, expires, join_fee, starting_reward FROM Competitions WHERE expires > current_timestamp() AND paid_out < 1 ORDER BY expires ASC LIMIT 10");
+$per_page = 10;
+$params = [];
+$total_query = "SELECT count(1) as total FROM Competitions";
+$query = " WHERE expires > current_timestamp() AND paid_out < 1 ORDER BY expires ASC";
+$base_query = "SELECT id, name, current_participants, min_participants, current_reward, min_score, expires, join_fee, starting_reward FROM Competitions";
+paginate($total_query . $query, $params, $per_page);
+//$stmt = $db->prepare("SELECT id, name, current_participants, min_participants, current_reward, min_score, expires, join_fee, starting_reward FROM Competitions WHERE expires > current_timestamp() AND paid_out < 1 ORDER BY expires ASC LIMIT 10");
+$query .= " LIMIT :offset, :count";
+$params[":offset"] = $offset;
+$params[":count"] = $per_page;
+$stmt = $db->prepare($base_query . $query);
+
+foreach ($params as $key => $value) {
+    $type = is_int($value) ? PDO::PARAM_INT : PDO::PARAM_STR;
+    $stmt->bindValue($key, $value, $type);
+}
+$params = null; //set it to null to avoid issues
 
 $results = [];
 try {
-    $stmt->execute();
-    $r = $stmt->fetchAll();
+    $stmt->execute($params); //dynamically populated params to bind
+    $r = $stmt->fetchAll(PDO::FETCH_ASSOC);
     if ($r) {
         $results = $r;
     }
-} catch (PDOException $e) 
-{
-    echo "There was a problem fetching competitions, please try again later";
-    error_log("List competitions error: " . var_export($e, true));
+} catch (PDOException $e) {
+    flash("<pre>" . var_export($e, true) . "</pre>");
 }
+//try {
+//    $stmt->execute();
+//    $r = $stmt->fetchAll();
+//    if ($r) {
+//        $results = $r;
+//    }
+//} catch (PDOException $e) 
+//{
+//    echo "There was a problem fetching competitions, please try again later";
+//    error_log("List competitions error: " . var_export($e, true));
+//}
 ?>
 <div class="container-fluid">
     <h1>Available Competitions</h1>
@@ -205,3 +230,7 @@ try {
         </tbody>
     </table>
 </div>
+
+<?php
+include(__DIR__ . "/../../partials/pagination.php");
+?>
