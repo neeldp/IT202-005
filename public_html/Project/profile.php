@@ -125,38 +125,8 @@ try {
             <a class="btn btn-primary" href="?edit=true">Edit</a>
         <?php endif; ?>
     <?php endif; ?>
-    <div>
-        <?php $scores = get_latest_scores($user_id); ?>
-        <h3>Score History</h3>
-        <table class="table text-light">
-            <thead>
-                <th>Score</th>
-                <th>Time</th>
-            </thead>
-            <tbody>
-                <?php foreach ($scores as $score) : ?>
-                    <tr>
-                        <td><?php se($score, "score", 0); ?></td>
-                        <td><?php se($score, "created", "-"); ?></td>
-                    </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
-    </div>
-    <?php if (!$edit) : ?>
-        <div>Username: <?php se($username); ?></div>
-        <div>Joined: <?php se($created); ?></div>
-        <!-- TODO any other public info -->
-    <?php endif; ?>
-
     <?php if ($isMe && $edit) : ?>
         <form method="POST" onsubmit="return validate(this);">
-            <div class="mb-3">
-                <div class="form-check form-switch">
-                    <input name="visibility" class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" <?php if ($public) echo "checked"; ?>>
-                    <label class="form-check-label" for="flexSwitchCheckDefault">Make Profile Public</label>
-                </div>
-            </div>
             <div class="mb-3">
                 <label class="form-label" for="email">Email</label>
                 <input class="form-control" type="email" name="email" id="email" value="<?php se($email); ?>" />
@@ -179,8 +149,37 @@ try {
                 <label class="form-label" for="conp">Confirm Password</label>
                 <input class="form-control" type="password" name="confirmPassword" id="conp" />
             </div>
+            <div class="mb-3">
+                <div class="form-check form-switch">
+                    <input name="visibility" class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" <?php if ($public) echo "checked"; ?>>
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Make Profile Public</label>
+                </div>
+            </div>
             <input type="submit" class="mt-3 btn btn-primary" value="Update Profile" name="save" />
         </form>
+    <?php endif; ?>
+    <div>
+        <?php $scores = get_latest_scores($user_id); ?>
+        <h3>Score History</h3>
+        <table class="table text-light">
+            <thead>
+                <th>Score</th>
+                <th>Time</th>
+            </thead>
+            <tbody>
+                <?php foreach ($scores as $score) : ?>
+                    <tr>
+                        <td><?php se($score, "score", 0); ?></td>
+                        <td><?php se($score, "created", "-"); ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+    <?php if (!$edit) : ?>
+        <div>Username: <?php se($username); ?></div>
+        <div>Joined: <?php se($created); ?></div>
+        <!-- TODO any other public info -->
     <?php endif; ?>
 </div>
 
@@ -258,7 +257,9 @@ try {
     }
     ?>
 
-    <h3>Points <?php foreach ($data as $points) : se($points, "points", 0); endforeach; ?> </h3>
+    <?php if ($edit) : ?>
+        <h3>Points <?php foreach ($data as $points) : se($points, "points", 0); endforeach; ?> </h3>
+    <?php endif; ?>    
 </div>
 
 <?php

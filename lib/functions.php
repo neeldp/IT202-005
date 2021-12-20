@@ -159,13 +159,13 @@ function get_top_10($duration)
         $d = $duration;
     }
     $db = getDB();
-    $query = "SELECT user_id, score, created FROM Scores";
+    $query = "SELECT user_id, username, score, Scores.created FROM Scores join Users on Scores.user_id = Users.id";
     if ($d !== "lifetime") {
         //be very careful passing in a variable directly to SQL, I ensure it's a specific value from the in_array() above
-        $query .= " WHERE created >= DATE_SUB(NOW(), INTERVAL 1 $d)";
+        $query .= " WHERE Scores.created >= DATE_SUB(NOW(), INTERVAL 1 $d)";
     }
     //remember to prefix any ambiguous columns (Users and Scores both have created)
-    $query .= " ORDER BY score Desc, created desc LIMIT 10"; //newest of the same score is ranked higher
+    $query .= " ORDER BY score Desc, Scores.created desc LIMIT 10"; //newest of the same score is ranked higher
     error_log($query);
     $stmt = $db->prepare($query);
     $results = [];
