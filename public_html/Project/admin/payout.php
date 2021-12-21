@@ -90,6 +90,7 @@ try {
                 echo "Getting winners error: ";
             }
         }
+        echo "Competitions paid out";
     } else {
         echo "No competitions ready\n";
     }
