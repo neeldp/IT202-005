@@ -145,109 +145,498 @@
 
  [https://github.com/neeldp/IT202-005/pull/66](https://github.com/neeldp/IT202-005/pull/66)</p></td></tr><tr><td><table><tr><td>F4 - Top 10 Weekly, Top 10 Monthly, Top 10 Lifetime<tr><td>Status: completed</td></tr><tr><td><img width="100%" src="https://user-images.githubusercontent.com/90344327/144318265-67a69564-cda7-4c33-ba96-dbfe26cd4bb1.png"><p>get_Top_10() function returns top 10 scores weekly, monthly, and lifetime</td></tr></td></tr></table></td></tr><tr><td><table><tr><td>F4 - Scoreboards should show no more than 10 results; if there are no results a proper message should be displayed (i.e., “No [time period] scores to display”)<tr><td>Status: completed</td></tr><tr><td><img width="100%" src="https://user-images.githubusercontent.com/90344327/144318435-a75b1593-62f6-4f90-8d70-682b4784fb05.png"><p>Message for no scores</td></tr></td></tr></table></td></tr></td></tr></table>
 
+  
+  
+  
+  
+  
+  
+  
 
 - Milestone 3
 
-  - [ ] \(mm/dd/yyyy of completion) Users will have points associated with their account.
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
+<table>
+<tr><td>milestone 3</td></tr><tr><td>
+<table>
+<tr><td>F1 - Users will have points associated with their account ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
 
+ [https://ndp69-prod.herokuapp.com/Project/profile.php](https://ndp69-prod.herokuapp.com/Project/profile.php)</p></td></tr>
+<tr><td>PRs:<p>
 
-  - [ ] \(mm/dd/yyyy of completion) Create a Points History table (id, user_id, point_change, reason, created)
-    -  List of Evidence of Feature Completion
-      - Status: Pending (Completed, Partially working, Incomplete, Pending)
-      - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-      - Pull Requests
-        - PR link #1 (repeat as necessary)
-      - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-          - Screenshot #1 description explaining what you're trying to show
+ [https://github.com/neeldp/IT202-005/pull/81](https://github.com/neeldp/IT202-005/pull/81)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F1 - Alter the User table to include points with a default of 0.</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
 
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145701592-1ab31f2e-5602-4caa-abd2-b724d7dea200.png">
+<p>Altered table to include points in user table</p>
+</td></tr>
 
-  - [ ] \(mm/dd/yyyy of completion) Competitions table should have the following columns (id, name, created, duration, expires     (now + duration), current_reward, starting_reward, join_fee, current_participants, min_participants, paid_out (boolean), min_score, first_place_per, second_place_per, third_place_per, cost_to_create, created, modified)
-    -  List of Evidence of Feature Completion
-      - Status: Pending (Completed, Partially working, Incomplete, Pending)
-      - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-      - Pull Requests
-        - PR link #1 (repeat as necessary)
-      - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-          - Screenshot #1 description explaining what you're trying to show
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145701595-949ccece-6f7c-42fb-8db2-06a39ff7a315.png">
+<p>Proof in database</p>
+</td></tr>
 
-  
-  - [ ] \(mm/dd/yyyy of completion) User will be able to create a competition
-    -  List of Evidence of Feature Completion
-      - Status: Pending (Completed, Partially working, Incomplete, Pending)
-      - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-      - Pull Requests
-        - PR link #1 (repeat as necessary)
-      - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-          - Screenshot #1 description explaining what you're trying to show
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F1 - This field will not be incremented/decremented directly, you must use the PointsHistory table to calculate it and set it each time the points change</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
 
-  
-  - [ ] \(mm/dd/yyyy of completion) Each new participant causes the Reward value to increase by at least 1 or 50% of the joining fee rounded up
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145701633-7d38984f-093e-4e54-9f4d-18ade9b124fd.png">
+<p>code for updating score using point history table</p>
+</td></tr>
 
-    -  List of Evidence of Feature Completion
-      - Status: Pending (Completed, Partially working, Incomplete, Pending)
-      - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-      - Pull Requests
-        - PR link #1 (repeat as necessary)
-      - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-          - Screenshot #1 description explaining what you're trying to show
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F1 - Points should show on their profile page</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
 
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145701641-a5d6b960-aced-495c-bbf8-469679b66fcc.png">
+<p>proof of points showing on profile page</p>
+</td></tr>
 
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F2 - Create a PointsHistory table (id, user_id, point_change, reason, created) ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
 
-  - [ ] \(mm/dd/yyyy of completion) Have a page where the User can see active competitions (not expired)
-    -  List of Evidence of Feature Completion
-      - Status: Pending (Completed, Partially working, Incomplete, Pending)
-      - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-      - Pull Requests
-        - PR link #1 (repeat as necessary)
-      - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-          - Screenshot #1 description explaining what you're trying to show
+ [https://ndp69-prod.herokuapp.com/Project/profile.php](https://ndp69-prod.herokuapp.com/Project/profile.php)</p></td></tr>
+<tr><td>PRs:<p>
 
+ [https://github.com/neeldp/IT202-005/pull/82](https://github.com/neeldp/IT202-005/pull/82)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F2 - Create a PointsHistory table</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
 
-  
-  - [ ] \(mm/dd/yyyy of completion) Will need an association table CompetitionParticipants (id, comp_id, user_id, created)
-    -  List of Evidence of Feature Completion
-      - Status: Pending (Completed, Partially working, Incomplete, Pending)
-      - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-      - Pull Requests
-        - PR link #1 (repeat as necessary)
-      - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-          - Screenshot #1 description explaining what you're trying to show
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145701778-0710a21f-749f-4494-a77f-04167062ef2d.png">
+<p>Points history table in database</p>
+</td></tr>
 
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F3 - Competitions table should have the following columns (id, name, duration, expires (now + duration), current_reward, starting_reward, join_fee, current_participants, min_participants, paid_out (boolean), min_score, first_place_per, second_place_per, third_place_per, cost_to_create, created, modified) ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
 
-  - [ ] \(mm/dd/yyyy of completion) User can join active competitions 
-    -  List of Evidence of Feature Completion
-      - Status: Pending (Completed, Partially working, Incomplete, Pending)
-      - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-      - Pull Requests
-        - PR link #1 (repeat as necessary)
-      - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-          - Screenshot #1 description explaining what you're trying to show
+ [https://ndp69-prod.herokuapp.com/Project/create_competition.php](https://ndp69-prod.herokuapp.com/Project/create_competition.php)</p></td></tr>
+<tr><td>PRs:<p>
 
-  
-  - [ ] \(mm/dd/yyyy of completion) Create function that calculates competition winners
-    -  List of Evidence of Feature Completion
-      - Status: Pending (Completed, Partially working, Incomplete, Pending)
-      - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-      - Pull Requests
-        - PR link #1 (repeat as necessary)
-      - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-          - Screenshot #1 description explaining what you're trying to show
+ [https://github.com/neeldp/IT202-005/pull/83](https://github.com/neeldp/IT202-005/pull/83)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F3 - Competitions table</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145701897-c5e1989f-191b-4d29-92dc-881b3b576434.png">
+<p>sql code for table</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145701923-0d6cbca6-e730-4b28-a225-94d3284bb5af.png">
+<p>table in database P1</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145701937-0194178b-d18a-4b91-bf64-799c3806fefb.png">
+<p>table in database p2</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F4 - User will be able to create a competition ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://ndp69-prod.herokuapp.com/Project/create_competition.php](https://ndp69-prod.herokuapp.com/Project/create_competition.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/neeldp/IT202-005/pull/86](https://github.com/neeldp/IT202-005/pull/86)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F4 - Competition form</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702018-d42e1f60-2cff-4f3c-b3fa-12d1f9b9eecd.png">
+<p>form</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F4 - Reward distribution must be equal to 100 (no less, no more)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702085-f471ef9c-3810-450e-b5c2-84504c8f29c8.png">
+<p>error msg for incorrect reward distribution</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F4 - All fields are required</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702097-2f52c379-7f66-4110-8ffe-00ff3329181d.png">
+<p>will not able be able to submit form unless all fields are inputted </p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F4 - if user does not have enough points to create a competition, an error msg will show</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702104-f1f7672b-9624-4294-bfe6-58d3c36724db.png">
+<p>error msg for insufficient balance </p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F5 - Each new participant causes the Reward value to increase by at least 1 or 50% of the joining fee rounded up ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://ndp69-prod.herokuapp.com/Project/list_competitions.php](https://ndp69-prod.herokuapp.com/Project/list_competitions.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/neeldp/IT202-005/pull/89](https://github.com/neeldp/IT202-005/pull/89)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F5 - Update reward for each new participant</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702229-8a2c52c7-32c8-411c-a1ab-e9f44ca41ad1.png">
+<p>code proof</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F6 - Have a page where the User can see active competitions (not expired) ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://ndp69-prod.herokuapp.com/Project/list_competitions.php](https://ndp69-prod.herokuapp.com/Project/list_competitions.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/neeldp/IT202-005/pull/87](https://github.com/neeldp/IT202-005/pull/87)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F6 - view competition page</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702294-dd42e78b-f313-4e7e-86e0-ee43450059af.png">
+<p>competitions page</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F6 - output to a maximum of 10 + Order the results by soonest to expire</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702298-2736d3f0-07c3-4f5f-a0b8-36e2829a028e.png">
+<p>code for this sql query</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F7 - Will need an association table CompetitionParticipants (id, comp_id, user_id, created) ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://ndp69-prod.herokuapp.com/Project/list_competitions.php](https://ndp69-prod.herokuapp.com/Project/list_competitions.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/neeldp/IT202-005/pull/84](https://github.com/neeldp/IT202-005/pull/84)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F7 - Comp_id and user_id should be a composite unique key (user can only join a competition once)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702437-2d600cf5-9437-43d8-b19a-883a59c54740.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F7 - CompetitionParticipants table</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702404-c8dc1291-da21-461d-85c6-4b1853e2d8ec.png">
+<p>table in database</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F8 - User can join active competitions ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://ndp69-prod.herokuapp.com/Project/list_competitions.php](https://ndp69-prod.herokuapp.com/Project/list_competitions.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/neeldp/IT202-005/pull/88](https://github.com/neeldp/IT202-005/pull/88)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F8 - insert data into competition participants table</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702581-4f3589b2-6c96-4651-bfbd-6ec0979be916.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F8 - Recalculate the Competitions.participants value based on the count of participants for this competition from the CompetitionParticipants table.</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702598-abda866c-096b-4fc6-8745-e882f26c866f.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F8 - Update the Competitions.reward based on the # of participants and the appropriate math from the competition requirements above</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702612-5c2c6863-b7b8-458e-87dd-3685d6045bf8.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F8 - Show proper error message if user is already registered</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702634-6161549a-85c6-4145-bd24-220a83cb052a.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F8 - Show proper confirmation if user registered successfully</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702640-bcbc7e03-b5d8-4e0d-9b4a-4eba714a3e38.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F9 - Create function that calculates competition winners ()</td></tr>
+<tr><td>Status: pending</td></tr>
+<tr><td>Links:<p>
+
+ [https://ndp69-prod.herokuapp.com/Project/admin/payout.php](https://ndp69-prod.herokuapp.com/Project/admin/payout.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/neeldp/IT202-005/pull/90](https://github.com/neeldp/IT202-005/pull/90)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F9 - Payout option found only on the admin account</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702728-ffbcd14b-f5aa-4569-9a3e-7c6ce50ae082.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F9 - Get all expired and not paid_out competitions</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702898-0d140547-797f-46a6-b489-8007ca01041a.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F9 - function for top 3 winners</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702912-12904d5e-6fa6-44f9-9251-0c3e134fa3db.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F9 - Calculate the payout (reward * place_percent) ******Round up the value (it’s ok to pay out an extra point here and there)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702919-5da6a94e-2992-42b3-b825-c7410c41b85a.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F9 - Mark the competition as paid_out = true</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/145702934-0332b122-0631-4c2f-b000-c4678ecb977f.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr></td></tr></table>
 
 
 - Milestone 4

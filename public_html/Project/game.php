@@ -219,31 +219,7 @@ menu();
 canvas.focus();
 </script>
 
-<div>
-    <?php 
-    $scores = get_top_10("month"); 
-    ?>
-    <h3>Daily high scores</h3>
-    <table class="table text-light">
-        <thead>
-            <th>User</th>
-            <th>Score</th>
-            <th>Time</th>
-        </thead>
-        <tbody>
-          <?php if (!$scores || count($scores) == 0) : ?>
-            <tr>
-            <td colspan="100%">No scores available</td>
-            </tr>
-          <?php else : ?>
-            <?php foreach ($scores as $score) : ?>
-              <tr>
-                <td><?php se($score, "user_id", 0); ?></td>
-                <td><?php se($score, "score", 0); ?></td>
-                <td><?php se($score, "created", "-"); ?></td>
-              </tr>
-            <?php endforeach; ?>
-          <?php endif; ?>
-        </tbody>
-    </table>
-</div>
+<?php
+    $duration = "lifetime";
+    require(__DIR__ . "/../../partials/score_table.php"); 
+?>
