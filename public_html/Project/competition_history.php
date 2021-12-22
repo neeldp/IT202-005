@@ -50,6 +50,7 @@ try {
             <th>Participants</th>
             <th>Reward</th>
             <th>Expired</th>
+            <th>Action</th>
         </thead>
         <tbody>
             <?php if (count($results) > 0) : ?>
@@ -59,6 +60,11 @@ try {
                         <td><?php se($row, "current_participants"); ?>/<?php se($row, "min_participants"); ?></td>
                         <td><?php se($row, "current_reward"); ?></td>
                         <td><?php se($row, "expires", "-"); ?></td>
+                        <td><form method="POST" action ='view_scoreboard.php'>
+                            <input type="hidden" name="competition_id" value="<?php se($row, 'id'); ?>" />
+
+                            <input type="submit" class="mt-3 btn btn-primary" value="View Scoreboard " name="viewScoreboard" />
+                        </form></td>
                     </tr>
                 <?php endforeach; ?>
                 

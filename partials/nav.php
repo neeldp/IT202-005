@@ -48,6 +48,7 @@ require_once(__DIR__ . "/../lib/functions.php");
             <li><a href="<?php echo get_url('admin/list_roles.php'); ?>">List Roles</a></li>
             <li><a href="<?php echo get_url('admin/assign_roles.php'); ?>">Assign Roles</a></li>
             <li><a href="<?php echo get_url('admin/payout.php'); ?>">Payout</a></li>
+            <li><a href="<?php echo get_url('admin/edit_comp.php'); ?>">Edit Competitions</a></li>
         <?php endif; ?>
         <?php if (is_logged_in()) : ?>
             <li><a href="<?php echo get_url('logout.php'); ?>">Logout</a></li>
