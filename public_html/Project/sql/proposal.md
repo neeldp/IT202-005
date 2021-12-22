@@ -1,5 +1,6 @@
 # Project Name: Simple Arcade
 ## Project Summary: This project will create a simple Arcade with scoreboards and competitions based on the implemented game.
+## Presentation Link: https://mediaspace.njit.edu/media/Kaltura+Capture+recording+-+December+21st+2021%2C+10A03A39+pm/1_efrqbmju
 ## Github Link: https://github.com/neeldp/IT202-005/tree/prod
 ## Project Board Link: https://github.com/neeldp/IT202-005/projects/1
 ## Website Link: https://ndp69-prod.herokuapp.com/Project/login.php
