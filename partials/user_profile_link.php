@@ -5,6 +5,7 @@ if (!isset($user_id)) {
 if (!isset($username)) {
     $username = "";
 }
+
 ?>
 <a href="<?php echo get_url("profile.php?id=");
             se($user_id); ?>"><?php se($username); ?></a>
