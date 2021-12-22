@@ -641,95 +641,420 @@
 
 - Milestone 4
 
-- [ ] \(mm/dd/yyyy of completion) User can set their profile to be public or private (will need another column in Users table)
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
 
-- [ ] \(mm/dd/yyyy of completion) User will be able to see their competition history
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
+<table>
+<tr><td>milestone 4</td></tr><tr><td>
+<table>
+<tr><td>F1 - User can set their profile to be public or private ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
 
-- [ ] \(mm/dd/yyyy of completion) User with the role of “admin” can edit a competition where paid_out = false
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
+ [https://ndp69-prod.herokuapp.com/Project/profile.php?edit=true](https://ndp69-prod.herokuapp.com/Project/profile.php?edit=true)</p></td></tr>
+<tr><td>PRs:<p>
 
-- [ ] \(mm/dd/yyyy of completion) Add pagination to the Active Competitions view
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
+ [https://github.com/neeldp/IT202-005/pull/94](https://github.com/neeldp/IT202-005/pull/94)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F1 - Visibility column added to the users table. 0 is the default value: 0 is private, 1 is public</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
 
-- [ ] \(mm/dd/yyyy of completion) Anywhere a username is displayed should be a link to that user’s profile
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147015707-b39ab65b-4054-4fab-9776-f328e181db44.png">
+<p></p>
+</td></tr>
 
-- [ ] \(mm/dd/yyyy of completion) Viewing an active or expired competition should show the top 10 scoreboard related to that competition
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F1 - If the user is private, a message is displayed</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
 
-- [ ] \(mm/dd/yyyy of completion) Game should be fully implemented/complete by this point
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147015897-c7e12c26-189d-4b65-8af4-8cebd5a32066.png">
+<p></p>
+</td></tr>
 
-- [ ] \(mm/dd/yyyy of completion) User’s score history will include pagination
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F1 - If a user is public, you can view their last 10 scores and the date they registered an account</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
 
-- [ ] \(mm/dd/yyyy of completion) Home page will have a weekly, monthly, and lifetime scoreboard
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147016069-5dae3c59-f902-406a-9dd4-4adadff71eea.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F1 - If a user clicks on their profile, they have a view/edit toggle</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147016230-27b16dc4-fa04-4f29-ac72-1d3da5564a27.png">
+<p></p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147016298-48cca240-9e69-4089-a1bb-f4b641f1934a.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F2 - Home page will have a weekly, monthly, and lifetime scoreboard ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://ndp69-prod.herokuapp.com/Project/home.php](https://ndp69-prod.herokuapp.com/Project/home.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/neeldp/IT202-005/pull/95](https://github.com/neeldp/IT202-005/pull/95)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F2 - Weekly scores, you can click on username to view profile</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147016524-ad088048-4be7-48b9-9ce8-1c5157fa40df.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F2 - Monthly and all time scores, clicking on username directs you to their profile</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147016632-3883ded1-8dd9-4a3a-acde-d68dfa1c2bf3.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F2 - At the bottom of the page, there is a link to the game</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147016720-4e4e4211-f18e-4da7-93ef-cc99d3c42f12.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F3 - User will be able to see their competition history ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://ndp69-prod.herokuapp.com/Project/competition_history.php](https://ndp69-prod.herokuapp.com/Project/competition_history.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/neeldp/IT202-005/pull/99](https://github.com/neeldp/IT202-005/pull/99)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F3 - 10 records per page</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147018576-6ced1186-97e5-4c7a-a3fb-6cd10f239628.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F4 - User with the role of “admin” can edit a competition where paid_out = false ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://ndp69-prod.herokuapp.com/Project/admin/edit_comp.php](https://ndp69-prod.herokuapp.com/Project/admin/edit_comp.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/neeldp/IT202-005/pull/102](https://github.com/neeldp/IT202-005/pull/102)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F4 - Admins can edit competitions that are not paid out. They can change any field, including the duration time</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147018710-2e351cf6-0648-474e-889b-931de256a96a.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F4 - If everything goes well, a message is displayed when the competition is edited correctly and updated in the database</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147018857-cd6a7557-acf2-4b5d-8d9e-62c4647aebe2.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F4 - The information is updated on other pages as well</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147018994-0d4ae476-bb31-4260-95b3-031b8c57e8ad.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F5 - Add pagination to the Active Competitions view ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://ndp69-prod.herokuapp.com/Project/list_competitions.php](https://ndp69-prod.herokuapp.com/Project/list_competitions.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/neeldp/IT202-005/pull/98](https://github.com/neeldp/IT202-005/pull/98)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F5 - page 1 of active competitions, 10 competitions per page</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147018123-b6511864-71f2-4470-bb32-49909bb12eb8.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F5 - 2nd page</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147018218-01f62483-70a1-4685-8f56-e1a603f59e68.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F6 - Anywhere a username is displayed should be a link to that user’s profile ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://ndp69-prod.herokuapp.com/Project/home.php](https://ndp69-prod.herokuapp.com/Project/home.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/neeldp/IT202-005/pull/104](https://github.com/neeldp/IT202-005/pull/104)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F6 - I showed multiple times in this milestone that the username is linked to their profile. Here is how i did it</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147019344-a95a4db8-fe05-4689-b695-b8b5746b3f4a.png">
+<p></p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147019498-d7e00635-6396-4fc9-b676-c131a2eed3dd.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F6 - If the user is private, it displays the message and directs you to the homepage</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147019616-b0ca08df-c373-4432-bd53-23b512fa5aba.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F7 - Viewing an active or expired competition should show the top 10 scoreboard related to that competition ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://ndp69-prod.herokuapp.com/Project/view_scoreboard.php](https://ndp69-prod.herokuapp.com/Project/view_scoreboard.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/neeldp/IT202-005/pull/103](https://github.com/neeldp/IT202-005/pull/103)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F7 - In the competition history, there is a button to view the scoreboard for top 10</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147019087-342c5007-12eb-428a-94aa-93fe2107abb7.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F7 - Displays Top 10 scores and if you click on the username it directs you to their profile</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147019178-c027b790-1cb1-4f69-a698-f9b30cfda4b3.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F8 - Game should be fully implemented/complete by this point ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://ndp69-prod.herokuapp.com/Project/game.php](https://ndp69-prod.herokuapp.com/Project/game.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/neeldp/IT202-005/pull/96](https://github.com/neeldp/IT202-005/pull/96)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F8 - Each time you collect the small square, the red square grows bigger. And when you reach a multiple of 25, 10 seconds are added to the time</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147016964-56cca10d-4122-4a20-96f4-2ebf89c96e61.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F9 - User’s score history will include pagination ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://ndp69-prod.herokuapp.com/Project/score_history.php](https://ndp69-prod.herokuapp.com/Project/score_history.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/neeldp/IT202-005/pull/97](https://github.com/neeldp/IT202-005/pull/97)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F9 - 10 records are displayed on each page. They are ordered from the latest to the oldest.</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147017211-2a6b74e7-66c5-49d9-9380-529ecf3fad4a.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F9 - 2nd page of score history</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90344327/147017325-42bf4c1d-165c-417f-b370-a976c7632bdc.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr></td></tr></table>
 
 
 
