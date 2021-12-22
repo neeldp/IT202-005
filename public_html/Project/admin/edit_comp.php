@@ -72,7 +72,7 @@ try {
                 </div>
                 <input type="hidden" name="competition_id" value="<?php se($row, 'id'); ?>" />
 
-                <input type="submit" class="mt-3 btn btn-primary" value="Edit Competition ". name="edit" />
+                <input type="submit" class="mt-3 btn btn-primary" value="Edit Competition " name="edit" />
             </form>
             <br><br>
         <?php endforeach; ?>

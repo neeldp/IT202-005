@@ -186,7 +186,7 @@ function get_top_scores_for_comp($comp_id, $limit = 10)
     $db = getDB();
     //below if a user can win more than one place
     $stmt = $db->prepare(
-        "SELECT score, s.created, u.id as user_id FROM Scores s 
+        "SELECT u.username, score, s.created, u.id as user_id FROM Scores s 
     JOIN CompetitionParticipants uc on uc.user_id = s.user_id 
     JOIN Competitions c on c.id = uc.comp_id
     JOIN Users u on u.id = s.user_id WHERE c.id = :cid AND s.score >= c.min_score AND s.created 
